@@ -10,6 +10,7 @@ It includes:
 ___________________________________________________________________________________________________________________________________________
 **Project Structure**
 -------------------------------------------------------------------------------------------------------------------------------------------
+```
 / (root)
 
 ├── SmartHealthcareSystem.java # Demonstrates IoT healthcare monitoring with design patterns (Exercise 1)
@@ -17,6 +18,7 @@ ________________________________________________________________________________
 ├── AstronautScheduler.java # Main mini-project application (Exercise 2)
 
 └── README.md # Project documentation
+```
 ___________________________________________________________________________________________________________________________________________
 1.Smart Healthcare Monitoring System
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -60,7 +62,8 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________
 **Sample Console Interaction – AstronautScheduler** **(EXCERCISE 1)**
 ------------------------------------------------------------------------------------------------------------------------------------------
-=== Singleton Pattern Test ===
+=== **Singleton Pattern Test** ===
+```
 Singleton verified: Only one IoTController instance exists.
 
 Number of patients to monitor: 2
@@ -68,39 +71,44 @@ Number of patients to monitor: 2
 Enter patient 1 name: Jeeva Ram
 
 Enter patient 2 name: Praveen Kumar
-
-=== Observer Pattern Test ===
+````
+=== **Observer Pattern Test** ===
+```
 Doctor notified: HeartRate: 60.04134350393505, Temperature: 37.91134212995624
 Nurse notified: HeartRate: 60.04134350393505, Temperature: 37.91134212995624
 Patient app alert: HeartRate: 60.04134350393505, Temperature: 37.91134212995624
 Doctor notified: HeartRate: 60.46582582552064, Temperature: 36.71335194730924
 Nurse notified: HeartRate: 60.46582582552064, Temperature: 36.71335194730924
 Patient app alert: HeartRate: 60.46582582552064, Temperature: 36.71335194730924
-
-=== Strategy Pattern Test ===
+```
+=== **Strategy Pattern Test** ===
+```
 Critical Monitoring: High frequency checks for Jeeva Ram
 Post-Surgery Monitoring for Praveen Kumar
-
-=== Sensor Factory Test ===
+```
+=== **Sensor Factory Test** ===
+```
 Reading HeartRateSensor: 85.1
 Reading TemperatureSensor: 36.1
 Reading HeartRateSensor: 87.9
 Reading TemperatureSensor: 37.9
-
-=== Decorator Pattern Test ===
+```
+=== **Decorator Pattern Test** ===
+```
 Logging: Some patients' vitals require attention!
 Logging: Some patients' vitals require attention!
 Base Alert: Some patients' vitals require attention!
 Email sent: Some patients' vitals require attention!
 SMS sent: Some patients' vitals require attention!
-
-=== Adapter Pattern Test ===
+```
+=== **Adapter Pattern Test** ===
+```
 FitbitAdapter reading for HeartRate: 80.5
 ArduinoAdapter reading for Temperature: 37.3
 BUILD SUCCESSFUL (total time: 1 minute 1 second)
-
+```
 __________________________________________________________________________________________________________________________________________
-1.Astronaut Daily Schedule Organizer
+**1.Astronaut Daily Schedule Organizer**
 This is a console-based Java application designed to help astronauts efficiently manage their daily schedules and tasks.
 
 The application enables astronauts to:
@@ -123,7 +131,7 @@ The application enables astronauts to:
 
 • Handle invalid inputs gracefully, with clear error messages
 
-Key Features
+**Key Features**
 
 • Singleton Pattern - Ensures that only one instance of ScheduleManager exists to manage all tasks in the system.
 
@@ -137,7 +145,7 @@ Key Features
 
 • Actions and errors are logged to astronaut_schedule.log for traceability.
 
-Optional Features
+**Optional Features**
 
 • Edit existing tasks
 
@@ -145,125 +153,124 @@ Optional Features
 
 • View tasks filtered by priority
 
-How to Run
-
+**How to Run**
+```
 Clone the repository or download the .java files.
-
 Open a terminal in the project folder.
-
-Compile the Java files:
-
+```
+**Compile the Java files:**
+```
 javac AstronautScheduler.java
-
 javac MedicationAppAllPatterns.java
-
-Run the desired program:
-
+```
+**Run the desired program:**
+```
 java AstronautScheduler
-
 or
-
 java MedicationAppAllPatterns
-
-Follow the instructions displayed in the console.
-
-Sample Console Interaction – AstronautScheduler
-Adding a Task
-
+```
+__________________________________________________________________________________________________________________________________________________________________________________________
+**Sample Console Interaction – AstronautScheduler**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Adding a Task**
+```
 Choose an option: 1
-
 Description: Morning Exercise
-
 Start time (HH:mm): 07:00
-
 End time (HH:mm): 08:00
-
 Priority (High/Medium/Low): High
-
 Task added successfully. No conflicts.
-
-Handling Conflict
-
+```
+**Handling Conflict**
+```
 Choose an option: 1
-
 Description: Training Session
-
 Start time (HH:mm): 07:30
-
 End time (HH:mm): 08:30
-
 Priority (High/Medium/Low): High
-
 Error: Task conflicts with existing task "Morning Exercise".
-
-Viewing Tasks
-
+```
+**Viewing Tasks**
+```
 Choose an option: 3
-
 07:00 - 08:00: Morning Exercise [HIGH]
-
-Editing a Task
-
+```
+**Editing a Task**
+```
 Choose an option: 4
-
 Description of task to edit: Morning Exercise
-
 New description: Morning Workout
-
 New start time (HH:mm): 06:30
-
 New end time (HH:mm): 07:30
-
 New priority (High/Medium/Low): High
-
 Task updated successfully.
-
-Marking Task Completed
-
+```
+**Marking Task Completed**
+```
 Choose an option: 5
-
 Description of task to mark completed: Morning Workout
-
 Task marked as completed.
-
-Viewing Tasks by Priority
-
+```
+**Viewing Tasks by Priority**
+```
 Choose an option: 6
-
 Enter priority (High/Medium/Low): High
-
 06:30 - 07:30: Morning Workout [HIGH] (Completed)
-
 Exiting Choose an option: 0 Exiting. Goodbye!
-Positive and Negative Test Cases – AstronautScheduler
-
-Positive Cases
-1.Add Task Enter task title: Morning Exercise Enter start time (HH:mm): 07:00 Enter end time (HH:mm): 08:00 Enter priority (High/Medium/Low): High Task added successfully. No conflicts.
-
-2.Add Task Enter task title: Team Meeting Enter start time (HH:mm): 09:00 Enter end time (HH:mm): 10:00 Enter priority (High/Medium/Low): Medium Task added successfully. No conflicts.
-
-3.View Tasks
-
+```
+__________________________________________________________________________________________________________________________________________________________________________________________
+**Positive and Negative Test Cases – AstronautScheduler**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Positive Cases**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1.**Add Task Enter task title**: 
+```
+Morning Exercise 
+Enter start time (HH:mm): 07:00 
+Enter end time (HH:mm): 08:00 
+Enter priority (High/Medium/Low): High Task added successfully. 
+No conflicts.
+```
+2.**Add Task Enter task title**: 
+```
+Team Meeting 
+Enter start time (HH:mm): 09:00 
+Enter end time (HH:mm): 10:00 
+Enter priority (High/Medium/Low): Medium Task added successfully. 
+No conflicts.
+```
+3.**View Tasks**
+```
 07:00 - 08:00: Morning Exercise [High]
-
 09:00 - 10:00: Team Meeting [Medium]
-
-4.Remove Task Select the task number to remove:
-
+```
+4.**Remove Task **
+```
+Select the task number to remove:
 07:00 - 08:00: Morning Exercise [High]
-
 09:00 - 10:00: Team Meeting [Medium] Enter task number: 1 Task "Morning Exercise" removed successfully.
-
-Negative Cases
-1.Add Task Enter task title: Training Session Enter start time (HH:mm): 09:30 Enter end time (HH:mm): 10:30 Enter priority (High/Medium/Low): High Error: Task conflicts with existing task "Team Meeting".
-
-2.Add Task Enter task title: Invalid Time Task Enter start time (HH:mm): 25:00 Enter end time (HH:mm): 26:00 Enter priority (High/Medium/Low): Low Error: Invalid time format.
-
-3.View Tasks (when empty) No tasks scheduled for the day.
-
-4.Remove Task (when empty) No tasks scheduled for the day.
-
-5.Remove Task (invalid number) Select the task number to remove:
-
-09:00 - 10:00: Team Meeting [Medium] Enter task number: 5 Error: Invalid task number.
-
+```
+**Negative Cases**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1.**Add Task** : 
+```
+Enter task title
+Training Session Enter start time (HH:mm): 09:30 
+Enter end time (HH:mm): 10:30 
+Enter priority (High/Medium/Low): High Error: 
+Task conflicts with existing task "Team Meeting".
+```
+2.**View Tasks** (when empty) 
+```
+No tasks scheduled for the day.
+```
+3.**Remove Task** (when empty) 
+```
+No tasks scheduled for the day.
+```
+4.**Remove Task** (invalid number) 
+```
+Select the task number to remove:
+09:00 - 10:00: Team Meeting [Medium]
+Enter task number: 5 Error: Invalid task number.
+```
